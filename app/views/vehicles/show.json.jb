@@ -1,5 +1,8 @@
 {
   id: @vehicle.id,
-  created_at: @vehicle.created_at,
-  updated_at: @vehicle.updated_at
+  make: @vehicle.make,
+  model: @vehicle.model,
+  vehicle_type: @vehicle.vehicle_type,
+  image: @vehicle.image_url,
+  years_made: @vehicle.years_made 
 }

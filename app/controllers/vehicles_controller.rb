@@ -12,4 +12,9 @@ class VehiclesController < ApplicationController
       render json: {errors: vehicle.errors.full_messages}
     end
   end
+
+  def show
+    @vehicle = Vehicle.find_by(id: params[:id])
+    render template: "vehicles/show" 
+  end 
 end
