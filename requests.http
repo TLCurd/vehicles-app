@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTA2NjA4ODh9.Hixu2Ne2sSB858XpuNeBkUZepUn8s-Jh1LzdwE3m0ho
+
 GET http://localhost:3000/vehicles.json
 ###
 POST http://localhost:3000/vehicles
@@ -15,7 +17,8 @@ Content-Type: application/json
 GET http://localhost:3000/vehicles/1.json
 
 ###
-PATCH http://localhost:3000/vehicles/14
+PATCH http://localhost:3000/vehicles/14.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {

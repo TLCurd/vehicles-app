@@ -1,4 +1,5 @@
 class VehiclesController < ApplicationController
+  before_action :authenticate_admin, only: [:update, :create, :destroy]
   def index
     @vehicles = Vehicle.all
     render template: "vehicles/index"
