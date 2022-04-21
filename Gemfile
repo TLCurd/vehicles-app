@@ -11,6 +11,7 @@ gem "pg", "~> 1.1"
 gem "awesome_print"
 gem "http"
 gem "jb"
+gem "jwt"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 

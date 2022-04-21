@@ -37,3 +37,12 @@ Content-Type: application/json
   "password" : ,
   "password_confirmation" : 
 }
+
+###
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email" : "Travis@gmail.com",
+  "password" : "password"
+}
