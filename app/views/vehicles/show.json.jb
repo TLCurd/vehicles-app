@@ -1,0 +1,5 @@
+{
+  id: @vehicle.id,
+  created_at: @vehicle.created_at,
+  updated_at: @vehicle.updated_at
+}
