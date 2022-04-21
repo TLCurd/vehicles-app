@@ -1,1 +1,12 @@
 GET http://localhost:3000/vehicles.json
+###
+POST http://localhost:3000/vehicles
+Content-Type: application/json
+
+{
+  "make" : "Lamborghini",
+  "model" : "Diablo",
+  "vehicle_type" : "Car",
+  "image_url" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLamborghini_Diablo&psig=AOvVaw35ga-AhF469Nqz_2QRl4Bj&ust=1650598798257000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJiTiP2dpPcCFQAAAAAdAAAAABAD",
+  "years_made" : "1990 - 2001"
+}
