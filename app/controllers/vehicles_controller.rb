@@ -17,4 +17,17 @@ class VehiclesController < ApplicationController
     @vehicle = Vehicle.find_by(id: params[:id])
     render template: "vehicles/show" 
   end 
+
+  def update
+    vehicle = Vehicle.find_by(id: params[:id])
+    vehicle.make = params[:make] || vehicle.make
+    vehicle.model = params[:model] || vehicle.model
+    vehicle.vehicle_type = params[:vehicle_type] || vehicle.vehicle_type
+    vehicle.image_url = params[:image_url] || vehicle.image_url
+    vehicle.years_made = params[:years_made] || vehicle.years_made
+    if vehicle.save
+      render json: {message: "The vehicle was successfully updated!", vehicle: vehicle.as_json}
+    end
+  end
+
 end

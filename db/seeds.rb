@@ -1,7 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Vehicle.destroy_all
+vehicle = Vehicle.create(make: "Toyota", model: "Tacoma", vehicle_type: "Truck", image_url:"https://www.google.com/url?sa=i&url=https%3A%2F%2Ftrailtacoma.com%2F2021%2F12%2F07%2Fcement-grey-3rd-gen-toyota-tacoma-offroad-overland-builds%2F&psig=AOvVaw25nb4V-cJPWIi9bu-iiR72&ust=1650607623513000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCIjr2Ny-pPcCFQAAAAAdAAAAABAT", years_made: "1995 - present")
+vehicle = Vehicle.create(make: "Toyota", model: "4Runner", vehicle_type: "SUV", image_url:"https://offroadium.com/wp-content/uploads/vehicles/toyota/4runner/toyota-4runner-anchred-offroad-13.jpg", years_made: "1984 - present")
+vehicle = Vehicle.create(make: "Mazda", model: "RX-7", vehicle_type: "Car", image_url:"https://igtcars.com/wp-content/uploads/2020/11/Mazda-RX7.jpg", years_made: "1978 - 2002")
