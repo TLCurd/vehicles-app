@@ -24,3 +24,16 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/vehicles/17
+
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name" : "Travis",
+  "email" : "Travis@gmail.com",
+  "password" : ,
+  "password_confirmation" : 
+}

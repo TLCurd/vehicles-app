@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get "/vehicles/:id", to: "vehicles#show"
   patch "/vehicles/:id", to: "vehicles#update"
   delete "/vehicles/:id", to: "vehicles#destroy"
+
+
+  post "/users", to: "users#create"
 end
