@@ -21,3 +21,6 @@ Content-Type: application/json
 {
   "model" : "F-Series (F-150, F-250, etc.)"
 }
+
+###
+DELETE http://localhost:3000/vehicles/17

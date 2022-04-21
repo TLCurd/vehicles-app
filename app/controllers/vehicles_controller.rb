@@ -30,4 +30,10 @@ class VehiclesController < ApplicationController
     end
   end
 
+  def destroy
+    vehicle = Vehicle.find_by(id: params[:id])
+    vehicle.destroy
+    render json: {message: "This whip was NOT sick - deleted!"}
+  end
+
 end

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   post "/vehicles", to: "vehicles#create"
   get "/vehicles/:id", to: "vehicles#show"
   patch "/vehicles/:id", to: "vehicles#update"
+  delete "/vehicles/:id", to: "vehicles#destroy"
 end
