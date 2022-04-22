@@ -12,6 +12,7 @@ gem "awesome_print"
 gem "http"
 gem "jb"
 gem "jwt"
+gem "seed_dump"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
