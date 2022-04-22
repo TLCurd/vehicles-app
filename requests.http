@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/vehicles/1.json
+GET https://shielded-ridge-22718.herokuapp.com/vehicles/7.json
 
 ###
 PATCH http://localhost:3000/vehicles/14.json
